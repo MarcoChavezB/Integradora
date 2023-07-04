@@ -46,9 +46,6 @@ background: linear-gradient(90deg, rgba(109,151,115,1) 1%, rgba(141,159,94,1) 10
     height: 100vh;
 }
 
-
-
-
 .header{
     display:flex;
     justify-content: center;
@@ -56,9 +53,10 @@ background: linear-gradient(90deg, rgba(109,151,115,1) 1%, rgba(141,159,94,1) 10
     align-items: center;
     position: absolute;
     width: 100%;
-    border-radius: 0px 0px 60px 0px;
+    border-radius: 0px 0px 30px 30px;
     background: rgb(141,159,94);
-background: linear-gradient(90deg, rgba(141,159,94,1) 1%, rgba(109,151,115,1) 100%);
+    background: linear-gradient(90deg, rgba(141,159,94,1) 1%,
+    rgba(109,151,115,1) 100%);
 }
 .header p{
     position: absolute;
