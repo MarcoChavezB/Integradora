@@ -1,309 +1,133 @@
 <template>
-    <!-- Aside -->
-        <div class="container">
-        <aside>
-            <div class="top">
-                <div class="logo">
-                    <span class="material-symbols-outlined">sound_detection_dog_barking</span>
-                    <h2>Veterinaria</h2>
+    <main>
+        <h1>Dashboard</h1>
+        <div class="date">
+            <input type="date">
+        </div>
+        <div class="insights">
+            <!----------------sales---------------->
+            <div class="sales">
+                <span class="material-symbols-outlined">
+                    analytics
+                </span>
+                <div class="middle">
+                    <div class="left">
+                        <h3>Total sales</h3>
+                        <h1>$25,024</h1>
+                    </div>
+                    <div class="progress">
+                        <svg>
+                            <circle cx='38' cy='38' r="38"></circle>
+                        </svg>
+                        <div class="number">
+                            <p>81%</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="close" id="close-btn">
-                    <span class="material-symbols-outlined">
-                        close
-                    </span>
-                </div>
+                <small class="text-muted">last 24 hours</small>
             </div>
-            <div class="sidebar">
-                <a href="#">
-                    <span class="material-symbols-outlined">
-                        grid_view
-                    </span>
-                    <h3>Dashboard</h3>
-                </a>
-                <a href="#" class="active">
-                    <span class="material-symbols-outlined">
-                        person
-                    </span>
-                    <h3>Customers</h3>
-                </a>
-                <a href="#">
-                    <span class="material-symbols-outlined">
-                        receipt_long
-                    </span>
-                    <h3>Order</h3>
-                </a>
-                <a href="#">
-                    <span class="material-symbols-outlined">
-                        insights
-                    </span>
-                    <h3>Analytics</h3>
-                </a>
-                <a href="#">
-                    <span class="material-symbols-outlined">
-                        mail_outline                    </span>
-                    <h3>Messages</h3>
-                    <span class="message-count">26</span>
-                </a>
-                <a href="#">
-                    <span class="material-symbols-outlined">
-                        logout                   
-                    </span>
-                    <h3>Logout</h3>
-                </a>
+            <!-----------------Expenses--------------------->
+            <div class="expenses">
+                <span class="material-symbols-outlined">
+                    bar_chart
+                </span>
+                <div class="middle">
+                    <div class="left">
+                        <h3>Total Gastos</h3>
+                        <h1>$25,024</h1>
+                    </div>
+                    <div class="progress">
+                        <svg>
+                            <circle cx='38' cy='38' r="38"></circle>
+                        </svg>
+                        <div class="number">
+                            <p>81%</p>
+                        </div>
+                    </div>
+                </div>
+                <small class="text-muted">last 24 hours</small>
             </div>
-        </aside>
-        <!--Fin del aside-->
-        <main>
-            <h1>Dashboard</h1>
-            <div class="date">
-                <input type="date">
-            </div>
-            <div class="insights">
-                <!----------------sales---------------->
-                <div class="sales">
-                    <span class="material-symbols-outlined">
-                        analytics
-                    </span>
-                    <div class="middle">
-                        <div class="left">
-                            <h3>Total sales</h3>
-                            <h1>$25,024</h1>
-                        </div>
-                        <div class="progress">
-                            <svg>
-                                <circle cx='38' cy='38' r="38"></circle>
-                            </svg>
-                            <div class="number">
-                                <p>81%</p>
-                            </div>
-                        </div>
+            <!-----------------income--------------------->
+            <div class="income">
+                <span class="material-symbols-outlined">
+                    stacked_line_chart
+                </span>
+                <div class="middle">
+                    <div class="left">
+                        <h3>Total income</h3>
+                        <h1>$25,024</h1>
                     </div>
-                    <small class="text-muted">last 24 hours</small>
-                </div>
-                <!-----------------Expenses--------------------->
-                <div class="expenses">
-                    <span class="material-symbols-outlined">
-                        bar_chart
-                    </span>
-                    <div class="middle">
-                        <div class="left">
-                            <h3>Total Gastos</h3>
-                            <h1>$25,024</h1>
-                        </div>
-                        <div class="progress">
-                            <svg>
-                                <circle cx='38' cy='38' r="38"></circle>
-                            </svg>
-                            <div class="number">
-                                <p>81%</p>
-                            </div>
-                        </div>
-                    </div>
-                    <small class="text-muted">last 24 hours</small>
-                </div>
-                <!-----------------income--------------------->
-                <div class="income">
-                    <span class="material-symbols-outlined">
-                        stacked_line_chart
-                    </span>
-                    <div class="middle">
-                        <div class="left">
-                            <h3>Total income</h3>
-                            <h1>$25,024</h1>
-                        </div>
-                        <div class="progress">
-                            <svg>
-                                <circle cx='38' cy='38' r="38"></circle>
-                            </svg>
-                            <div class="number">
-                                <p>81%</p>
-                            </div>
-                        </div>
-                    </div>
-                    <small class="text-muted">last 24 hours</small>
-                </div>
-            </div>
-            <!----------------Terminacion---------------->
-            <div class="recent-orders">
-                <h2>Recent order</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Nombre producto</th>
-                            <th>Numero producto</th>
-                            <th>Precio producto</th>
-                            <th>Status producto</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Producto1</td>
-                            <td>2140</td>
-                            <td>40$</td>
-                            <td class="warning">Vendido</td>
-                            <td class="primary">Detalles</td>
-                        </tr>
-                        <tr>
-                            <td>Producto1</td>
-                            <td>2140</td>
-                            <td>40$</td>
-                            <td class="warning">Vendido</td>
-                            <td class="primary">Detalles</td>
-                        </tr>
-                        <tr>
-                            <td>Producto1</td>
-                            <td>2140</td>
-                            <td>40$</td>
-                            <td class="warning">Vendido</td>
-                            <td class="primary">Detalles</td>
-                        </tr>
-                        <tr>
-                            <td>Producto1</td>
-                            <td>2140</td>
-                            <td>40$</td>
-                            <td class="warning">Vendido</td>
-                            <td class="primary">Detalles</td>
-                        </tr>
-                        <tr>
-                            <td>Producto1</td>
-                            <td>2140</td>
-                            <td>40$</td>
-                            <td class="warning">Vendido</td>
-                            <td class="primary">Detalles</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <a href="#">Show all</a>
-            </div>
-        </main>
-
-        <!----------------End main-------------------->
-
-        <div class="right">
-            <div class="top">
-                <button id="menu-btn">
-                    <span class="material-symbols-outlined">
-                        menu
-                    </span>
-                </button>
-                <div class="profile">
-                    <div class="info">
-                        <p>Hola, <b>Marco</b></p>
-                            <small class="text-mited">Admin</small>
-                    </div>
-                    <div class="profile-photo">
-                        <span class="material-symbols-outlined">face</span>
-                    </div>
-                </div>
-            </div>
-            <div class="recent-updates">
-                <h2>recent updates</h2>
-                <div class="updates">
-                    <!--Carta de reciente individial-->
-                    <div class="update">
-                        <div class="profile-photo">
-                            <span class="material-symbols-outlined">person</span>
-                        </div>
-                        <div class="message">
-                            <p><b>Alonso</b> pidio una orden esta noche</p>
-                            <!--Hora de realizacion-->
-                            <small class="text-muted">Hace 2 minutos</small>
-                        </div>
-                    </div>
-
-                    <div class="update">
-                        <div class="profile-photo">
-                            <span class="material-symbols-outlined">person</span>
-                        </div>
-                        <div class="message">
-                            <p><b>Sara</b> pidio una orden esta noche</p>
-                            <!--Hora de realizacion-->
-                            <small class="text-muted">Hace 2 minutos</small>
-                        </div>
-                    </div>
-
-                    <div class="update">
-                        <div class="profile-photo">
-                            <span class="material-symbols-outlined">person</span>
-                        </div>
-                        <div class="message">
-                            <p><b>Antony</b> pidio una orden esta noche</p>
-                            <!--Hora de realizacion-->
-                            <small class="text-muted">Hace 2 minutos</small>
+                    <div class="progress">
+                        <svg>
+                            <circle cx='38' cy='38' r="38"></circle>
+                        </svg>
+                        <div class="number">
+                            <p>81%</p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!--Fin de las updates-->
-
-            <div class="sales-analytics">
-                <h2>sales analytics</h2>
-                <!--Item indivudual-->
-                <div class="item online">
-                    <div class="icon">
-                        <span class="material-symbols-outlined">
-                            shopping_cart
-                        </span>
-                    </div>
-                    <div class="right">
-                        <div class="info">
-                            <h3>Solo ordenes</h3>
-                            <small class="text-muted">Ultimas 24 horas</small>
-                        </div>
-                        <h5 class="succes">+39%</h5>
-                        <h3>3820</h3>
-                    </div>
-                </div>
-                <!--Item indivudual-->
-                <div class="item offline">
-                    <div class="icon">
-                        <span class="material-symbols-outlined">
-                            local_mall
-                        </span>
-                    </div>
-                    <div class="right">
-                        <div class="info">
-                            <h3>Fuera de venta</h3>
-                            <small class="text-muted">Ultimas 24 horas</small>
-                        </div>
-                        <h5 class="danger">-19%</h5>
-                        <h3>4820</h3>
-                    </div>
-                </div>
-                <!--Item indivudual-->
-                <div class="item customers">
-                    <div class="icon">
-                        <span class="material-symbols-outlined">
-                            person
-                        </span>
-                    </div>
-                    <div class="right">
-                        <div class="info">
-                            <h3>New customers</h3>
-                            <small class="text-muted">Ultimas 24 horas</small>
-                        </div>
-                        <h5 class="succes">+19%</h5>
-                        <h3>4820</h3>
-                    </div>
-                </div>
-                <div class="item add-product">
-                    <div>
-                        <span class="material-symbols-outlined">
-                            add
-                        </span>
-                        <h3>Add product</h3>
-                    </div>
-                </div>
+                <small class="text-muted">last 24 hours</small>
             </div>
         </div>
-    </div>
+        <!----------------Terminacion---------------->
+        <div class="recent-orders">
+            <h2>Recent order</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre producto</th>
+                        <th>Numero producto</th>
+                        <th>Precio producto</th>
+                        <th>Status producto</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Producto1</td>
+                        <td>2140</td>
+                        <td>40$</td>
+                        <td class="warning">Vendido</td>
+                        <td class="primary">Detalles</td>
+                    </tr>
+                    <tr>
+                        <td>Producto1</td>
+                        <td>2140</td>
+                        <td>40$</td>
+                        <td class="warning">Vendido</td>
+                        <td class="primary">Detalles</td>
+                    </tr>
+                    <tr>
+                        <td>Producto1</td>
+                        <td>2140</td>
+                        <td>40$</td>
+                        <td class="warning">Vendido</td>
+                        <td class="primary">Detalles</td>
+                    </tr>
+                    <tr>
+                        <td>Producto1</td>
+                        <td>2140</td>
+                        <td>40$</td>
+                        <td class="warning">Vendido</td>
+                        <td class="primary">Detalles</td>
+                    </tr>
+                    <tr>
+                        <td>Producto1</td>
+                        <td>2140</td>
+                        <td>40$</td>
+                        <td class="warning">Vendido</td>
+                        <td class="primary">Detalles</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="#">Show all</a>
+        </div>
+    </main>
 </template>
-
 
 <style>
 
-    *{
+*{
     font-family: 'Comfortaa', cursive;
     margin: 0;
     padding: 0;
